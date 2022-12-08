@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="iconDiv">
+            <i class="fa-solid fa-bars fa-2x" onclick="toggle()"></i>
+        </div>
+        <div class="itemDiv">
+            <ul>
+                <li class="different" onclick="openPage('index')"><a>Home</a></li>
+                <li class="different" onclick="openPage('details')"><a>Details</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bodySection">
+        <div  class="sidebar">
+            <div id="sideSection">
+                <div class="iconElement"><i class="fa-sharp fa-solid  fa-xmark " onclick="toggle()"></i></div>
+                <div onclick="openPage('index')" class="sideElement">Home</div>
+                <div  onclick="openPage('details')" class="sideElement">Details</div>
+                <div class="sideElement">About</div>
+                <div class="sideElement">Contact</div>
+            </div>
+        </div>
+        <div id="mainSection">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A maiores fugiat earum impedit praesentium molestiae sequi quidem corrupti error, consequatur suscipit nisi facilis cupiditate inventore quo quisquam ea. Soluta, dolorem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem quod, harum obcaecati soluta facere error commodi eligendi veniam impedit perferendis molestias, rerum incidunt, blanditiis alias? Cupiditate eum fugit delectus?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero dolore iusto blanditiis totam cupiditate fugit suscipit cum debitis voluptas, qui nemo explicabo neque dolor necessitatibus corrupti ex, voluptatibus tempore harum!
+        </div>
+    </div>
+</body>
+<script src="./dummy.js"></script>
+
+<script src="./main.js"></script>
+
+</html>

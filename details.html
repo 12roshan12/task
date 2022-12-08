@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="iconDiv">
+            <i class="fa-solid fa-bars fa-2x" onclick="toggle()"></i>
+        </div>
+        <div class="itemDiv">
+            <ul>
+                <li class="different" onclick="openPage('index')"><a>Home</a></li>
+                <li class="different" onclick="openPage('details')"><a>Details</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bodySection">
+        <div  class="sidebar">
+            <div id="sideSection">
+                <div class="iconElement"><i class="fa-sharp fa-solid  fa-xmark " onclick="toggle()"></i></div>
+                <div onclick="openPage('index')" class="sideElement">Home</div>
+                <div  onclick="openPage('details')" class="sideElement">Details</div>
+                <div class="sideElement">About</div>
+                <div class="sideElement">Contact</div>
+            </div>
+        </div>
+        <div id="mainSection">
+            <div>
+                <input type="text" id='search' />
+            </div>
+            <div>
+                <table id="table1">
+                    <thead>
+    
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                    <tfoot>
+                        <td colspan="3">
+                            <div id="footerDiv">
+        
+                            </div>
+                        </td>
+                    </tfoot>
+    
+                </table>
+            </div>
+         
+            
+        </div>
+    </div>
+</body>
+
+<script src="./dummy.js"></script>
+<script src="./details.js"></script>
+<script src="./main.js"></script>
+
+</html>
