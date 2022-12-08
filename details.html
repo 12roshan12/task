@@ -33,8 +33,13 @@
             </div>
         </div>
         <div id="mainSection">
-            <div>
-                <input type="text" id='search' />
+            <div style="display:flex; flex-direction:row;justify-content:space-between;border:1px solid black; width:fit-content;border-radius: 6px;margin-bottom: 6px;">
+                <div>
+                    <input style="border: none;" type="text" id='search' />
+                </div>
+                <div style="display:flex;flex-direction:row;padding:4px 10px;align-items:center;justify-content:center;border-left:1px solid black;background-color: blue;" id='search'>
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                </div>
             </div>
             <div>
                 <table id="table1">
@@ -60,8 +65,8 @@
     </div>
 </body>
 
+<script src="./main.js"></script>
 <script src="./dummy.js"></script>
 <script src="./details.js"></script>
-<script src="./main.js"></script>
 
 </html>

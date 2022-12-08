@@ -183,7 +183,7 @@ tr:nth-child(even) {
 }
 
 input {
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
     padding:0px 20px;
 
 }
@@ -193,6 +193,10 @@ input {
     flex-direction: row;
     justify-content: end;
     padding: 4px;
+}
+
+input:focus-visible {
+    outline: none;
 }
 
 @media screen and (max-width : 700px) {

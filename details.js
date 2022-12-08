@@ -6,6 +6,7 @@ function sort(e) {
   const receivedIndex = e
   const thead = document.querySelector("#table1 thead");
   const tbody = document.querySelector("#table1 tbody");
+  let tfoot = document.querySelector("#table1 tfoot");
   const footerDiv = document.querySelector("#footerDiv");
   const totallength = Math.ceil(fetchedData.length / 5)
   const mappedData = fetchedData.filter((e) => {
@@ -35,6 +36,7 @@ function sort(e) {
 window.addEventListener('DOMContentLoaded', () => {
   const thead = document.querySelector("#table1 thead");
   const tbody = document.querySelector("#table1 tbody");
+  let tfoot = document.querySelector("#table1 tfoot");
   const footerDiv = document.querySelector("#footerDiv");
 
   const mappedData = fetchedData.filter((e) => e.id <= 5)
@@ -68,6 +70,7 @@ element.addEventListener('blur', async function (data) {
   else{
     let thead = document.querySelector("#table1 thead");
     let tbody = document.querySelector("#table1 tbody");
+    let tfoot = document.querySelector("#table1 tfoot");
     let footerDiv = document.querySelector("#footerDiv");
   
     thead.innerHTML = `<tr>
@@ -80,9 +83,12 @@ element.addEventListener('blur', async function (data) {
         </tr>`).join('')
     if (tempdata.length < 5) {
       footerDiv.setAttribute('style', 'display:none;')
+      tfoot.setAttribute('style', 'display:none;')
     }
     else {
       footerDiv.removeAttribute('style', 'display:none;')
+      tfoot.removeAttribute('style', 'display:none;')
+
       const mappedData = fetchedData.filter((e) => e.id <= 5)
       thead.innerHTML = `<tr>
             ${Object.keys(mappedData[0]).map(key => `<th>${key.toUpperCase()}</th>`).join('')}
