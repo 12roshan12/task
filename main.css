@@ -88,6 +88,7 @@ li.different:hover {
 }
 
 .bodySection .sidebar {
+    z-index: 99999;
     width: 300px;
     background-image: linear-gradient(to right, #83EAF1,#63A4FF);
     display: flex;
@@ -165,6 +166,7 @@ li.different:hover {
 }
 
 table {
+    z-index: -1;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;

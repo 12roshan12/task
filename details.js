@@ -3,6 +3,7 @@
 const fetchedData = data.data
 
 function sort(e) {
+  console.log('aaaa')
   const receivedIndex = e
   const thead = document.querySelector("#table1 thead");
   const tbody = document.querySelector("#table1 tbody");
@@ -34,6 +35,7 @@ function sort(e) {
 
 
 window.addEventListener('DOMContentLoaded', () => {
+  console.log('DOMContentLoaded')
   const thead = document.querySelector("#table1 thead");
   const tbody = document.querySelector("#table1 tbody");
   let tfoot = document.querySelector("#table1 tfoot");
@@ -58,6 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const element = document.getElementById("search");
 element.addEventListener('blur', async function (data) {
+  console.log('blurloaded')
+
   let tempdata = fetchedData;
   tempdata = await tempdata.filter((e) => {
     return e.country.toLowerCase().includes(data.target.value.toLowerCase())
