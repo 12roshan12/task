@@ -1,64 +1,76 @@
 data = {
     "data":[
         {
-            "id":"1",
+            id:1,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Nepal"
         },
         {
-            "id":"2",
+            id:2,
             "name":"roshan",
+            "postalCode":1234,
             "country":"India"
         },
         {
-            "id":"3",
+            id:3,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Bhutan"
         },
         {
-            "id":"4",
+            id:4,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Bangladesh"
         },
         {
-            "id":"5",
+            id:5,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Iraq"
         },
         {
-            "id":"6",
+            id:6,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Iran"
         },
         {
-            "id":"7",
+            id:7,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Quatar"
         },
         {
-            "id":"8",
+            id:8,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Russia"
         },
         {
-            "id":"9",
+            id:9,
             "name":"roshan",
+            "postalCode":1234,
             "country":"China"
         },
         {
-            "id":"10",
+            id:10,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Japan"
         },
         {
-            "id":"11",
+            id:11,
             "name":"roshan",
+            "postalCode":1234,
             "country":"Malaysia"
         },
         {
-            "id":"12",
+            id:12,
             "name":"roshan",
-            "country":"Veitnam"
+            "postalCode":1234,
+            "country":"Veitnam",
         }
     ]
 }
